@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: b75960aa0fdf4fd4ead0c9a67673a564
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20s telephone_black
+    second: {fileID: 2100000, guid: 9ff3d4402bff8e34bb3f89c7ff3cb51e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20s telephone_brown
+    second: {fileID: 2100000, guid: 664aba5f1bc71cf4484d524cbc9df646, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20s telephone_gold
+    second: {fileID: 2100000, guid: f8a836109aeba454a84d0c44f5f53d35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20s telephone_white
+    second: {fileID: 2100000, guid: 9e29cbba07ef35d42842968bca74d5c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 302_black
+    second: {fileID: 2100000, guid: e95cb4c2938340d46a5a0bd2f6c5a675, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 302_gray1
+    second: {fileID: 2100000, guid: 500c868adbfe7ea4b8c04c29a8ba74a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 302_gray2
+    second: {fileID: 2100000, guid: 8cfd5105b957e7f42a10e0ff4496ba81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 302_white
+    second: {fileID: 2100000, guid: 8e031f406ab274148831f74167850899, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 302_yellow
+    second: {fileID: 2100000, guid: f4af53182bad14342b5a6b896fc742a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3310_black
+    second: {fileID: 2100000, guid: 6fa05355a519aef47b0803dd95062db9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3310_blue1
+    second: {fileID: 2100000, guid: f9d0492485d868148a735d7b3f4adb2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3310_blue2
+    second: {fileID: 2100000, guid: 167b54ea135b85746883d5e2742c0383, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3310_gray
+    second: {fileID: 2100000, guid: 9ac3bb5b7c7954341a712d6b1b874cd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3310_green
+    second: {fileID: 2100000, guid: b172feda0734da0439dcc52a1fc50fa8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6160_black1
+    second: {fileID: 2100000, guid: 529caa9354d86274d90f73e58d6ab080, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6160_black2
+    second: {fileID: 2100000, guid: f4bafdb4a5842d142acb424ffb7b1b04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6160_black3
+    second: {fileID: 2100000, guid: 4a6d718171033b5479c048bda484aa55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6160_gray1
+    second: {fileID: 2100000, guid: 255b16d4cdaa08e4890a042b1c680b5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6160_gray2
+    second: {fileID: 2100000, guid: a562607d736ffbe4eaf80c524af4dd2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6160_green
+    second: {fileID: 2100000, guid: a9afccd3a07de0048b0b94fa4d2e2787, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8000x_black
+    second: {fileID: 2100000, guid: 2a7abaf08b1854948a332b6d06e90128, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8000x_creme1
+    second: {fileID: 2100000, guid: 91271f55bbe6d0f46acec681758cba08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8000x_creme2
+    second: {fileID: 2100000, guid: b19c1c459bbb36e468c251ee26ea6b75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8000x_orange
+    second: {fileID: 2100000, guid: 17ff6e061d7ff384abc7dadffd0f1a6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_black1
+    second: {fileID: 2100000, guid: 49ace17bb92407a458055ca43f4b435d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_black2
+    second: {fileID: 2100000, guid: f738c5bf2a3d96145ad30afe7aec5b31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_blue1
+    second: {fileID: 2100000, guid: ca2ca773bdeb374448c5c2e8fd824f95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_blue2
+    second: {fileID: 2100000, guid: 14b394cf90fc71149b6fbcb015ef90f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_gray
+    second: {fileID: 2100000, guid: 3df3a030d817d0b4d947ad3af4accedc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_purple1
+    second: {fileID: 2100000, guid: 82fe94e058987694690917d75c8e1511, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_purple2
+    second: {fileID: 2100000, guid: e0b6e3d9da97d454f8d775a5d3100c61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_turq1
+    second: {fileID: 2100000, guid: d37b0e29b81e90342893101f50c8bb2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_turq2
+    second: {fileID: 2100000, guid: 0c4bd9b5a6d977b4dacf50b85f47789b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackberry_white
+    second: {fileID: 2100000, guid: 1667c5e58e62c9642928ba0657fdf679, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_black1
+    second: {fileID: 2100000, guid: 656a57a92dc6a5440a08e920b41f0d3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_black2
+    second: {fileID: 2100000, guid: 0db3131e9c3ce5b4d9b4cb2ed381fef7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_black3
+    second: {fileID: 2100000, guid: 3a1b122ae3b6f8d459fab1ee41268301, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_gray1
+    second: {fileID: 2100000, guid: fa674e17a5a031747b737db34aed3a39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_gray2
+    second: {fileID: 2100000, guid: 2695ba17a816367478366617a2cb5c72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_gray3
+    second: {fileID: 2100000, guid: 985a8752d144698449a2f834575b967c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_pink1
+    second: {fileID: 2100000, guid: 7f6133fbd161d674ba1032b2913ebe3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_pink2
+    second: {fileID: 2100000, guid: 0ba1ce8e3fefef242966a00b95ac0736, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_pink3
+    second: {fileID: 2100000, guid: 5c4c9cbdbab58b74ab342adab52a2998, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flat screen flip phone_white
+    second: {fileID: 2100000, guid: 292e7f2190757af48a3cde19d368d3e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_black1
+    second: {fileID: 2100000, guid: 9533126a32b58e2478ecc56172eecc65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_black2
+    second: {fileID: 2100000, guid: f41b77e4ac7d412429f186830a345f3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_black3
+    second: {fileID: 2100000, guid: 74d0e9b4ca3a36d488ab79a6f09c1687, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_gray1
+    second: {fileID: 2100000, guid: 218c1736799ac4c47b517cf603cbf197, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_gray2
+    second: {fileID: 2100000, guid: b06d0653d665ea145ba0a01a80a1b0bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_red1
+    second: {fileID: 2100000, guid: 4db35c7242eeacf49bf7f424027e064a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_red2
+    second: {fileID: 2100000, guid: afb35595cd5043b4ea8e5ad6023808d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_red3
+    second: {fileID: 2100000, guid: 2f84fb3376cc9de448f5d514944dd3ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: flip phone_white
+    second: {fileID: 2100000, guid: 9acd2415b079e874fae8681fe13816b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iphone_black1
+    second: {fileID: 2100000, guid: 2241290f618b3cd4993c9c762e5b683a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iphone_gray5
+    second: {fileID: 2100000, guid: 65da235ad2ad74c46b427db58f177689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iphone_gray5.1
+    second: {fileID: 2100000, guid: ece5690d40cc67d4e80f066f1f3e2916, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red phone w_buttons_gray1
+    second: {fileID: 2100000, guid: b28cbd2d5eb68704fa88b4fac623bde7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red phone w_buttons_gray2
+    second: {fileID: 2100000, guid: e2cd74173d87f2a4bbefc0ddd52a3ba8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red phone w_buttons_red1
+    second: {fileID: 2100000, guid: 0d9d6e8c59df9f843b4373d41f528ba9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red phone w_buttons_red2
+    second: {fileID: 2100000, guid: 2e920fba5fd72774f8b9b74b65c0a2a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red phone w_buttons_white
+    second: {fileID: 2100000, guid: 4d6a1e296d30c1f40bf37da42c176d44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wireless house phone_black
+    second: {fileID: 2100000, guid: e26114e52dd187044b64f54a6d183a85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wireless house phone_gray1
+    second: {fileID: 2100000, guid: e15ef2fc427d61d41b85dc4c52c27d3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wireless house phone_gray2
+    second: {fileID: 2100000, guid: ecec99acd45cc004cb97593809a90a93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wireless house phone_green
+    second: {fileID: 2100000, guid: 8079c660e6011c549b310a9df0193ef5, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 0
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

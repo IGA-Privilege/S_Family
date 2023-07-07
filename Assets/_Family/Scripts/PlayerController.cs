@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     private Vector2 movement = Vector2.zero;
     public Vector2 lookDirection = Vector2.zero;
+    public UI_InteractBar interactProgressBar;
+    public LayerMask momInteractableLM;
 
     private CharacterController cc;
 
@@ -20,15 +24,61 @@ public class PlayerController : MonoBehaviour
     float maximumY = 60;
     private float rotationX = 0;
 
+    private float interactTimer;
+    private float interactStartSec = 3f;
+    private float interactEndSec = 8f;
+    private bool isInteracting { get { return interactTimer > interactStartSec; } }
+    private float interactPercentage { get { return (interactTimer - interactStartSec) / (interactEndSec - interactStartSec); } }
+
+
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        interactProgressBar.gameObject.SetActive(false);
     }
 
-    void FixedUpdate()
+    private void Update()
     {
         PlayerMovement();
         CameraRotation();
+        if (thisType == CharacterType.Mother)
+        {
+            TickMotherInteraction();
+        }
+    }
+
+    private void TickMotherInteraction()
+    {
+        Collider[] objs = Physics.OverlapSphere(transform.position, 2f, momInteractableLM);
+        if (objs.Length > 0)
+        {
+            if (objs[0].TryGetComponent<O_MotherInteractable>(out O_MotherInteractable interactable))
+            {
+                if (interactable.canInteract)
+                {
+                    interactTimer += Time.deltaTime;
+                    if (isInteracting)
+                    {
+                        interactProgressBar.gameObject.SetActive(true);
+                        interactProgressBar.UpdateInteractProgress(interactPercentage);
+                        if (interactTimer > interactEndSec)
+                        {
+                            interactable.OnPlayerInteract();
+                        }
+                    }
+                    else
+                    {
+                        interactProgressBar.gameObject.SetActive(false);
+                    }
+                    return;
+                }
+
+            }
+        }
+
+        interactTimer = 0f;
+        interactProgressBar.gameObject.SetActive(false);
+
     }
 
     private void PlayerMovement()
