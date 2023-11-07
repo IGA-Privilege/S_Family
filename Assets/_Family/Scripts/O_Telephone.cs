@@ -8,7 +8,6 @@ public class O_Telephone : O_MotherInteractable
     [SerializeField] private AudioClip ring;
     private AudioSource _phoneAudioSource;
 
-
     private void Awake()
     {
         _phoneAudioSource = GetComponent<AudioSource>();

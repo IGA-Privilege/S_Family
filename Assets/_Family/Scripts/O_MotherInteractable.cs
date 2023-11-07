@@ -8,11 +8,9 @@ public class O_MotherInteractable : MonoBehaviour
 {
     public float popUpInSec;
     public float rePopUpSec;
-
     private float _popUpTimer;
     public bool canInteract { get { return _popUpTimer > popUpInSec; } }
     private bool _hasPopedUp = false;
-
 
     private void Update()
     {
@@ -26,7 +24,6 @@ public class O_MotherInteractable : MonoBehaviour
             }
         }
     }
-
 
     protected virtual void PopUp()
     {
