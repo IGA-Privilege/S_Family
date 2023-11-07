@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
@@ -10,19 +9,22 @@ public class PlayerController : MonoBehaviour
     public enum CharacterType { Child, Mother, Father }
     public CharacterType thisType;
     public Camera playerCamera;
+    public Transform cameraPosition;
+    public GameObject characterObj;
     public float speed = 5f;
-    private Vector2 movement = Vector2.zero;
+    private Vector3 movement = Vector3.zero;
     public Vector2 lookDirection = Vector2.zero;
     public UI_InteractBar interactProgressBar;
     public LayerMask momInteractableLM;
+    public Animator animator;
 
     private CharacterController cc;
 
-    float sensitivityX = 100;
-    float sensitivityY = 100;
-    float minimumY = -60;
-    float maximumY = 60;
-    private float rotationX = 0;
+    private bool isBeingControlled = false;
+    private float lookRotationX = 0;
+    private float lookRotationY = 0;
+    private float lookSpeed = 800f;
+    private float lookXLimit = 20f;
 
     private float interactTimer;
     private float interactStartSec = 3f;
@@ -34,13 +36,61 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
-        interactProgressBar.gameObject.SetActive(false);
+        if (interactProgressBar != null)
+        {
+            interactProgressBar.gameObject.SetActive(false);
+        }
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (thisType == CharacterType.Mother)
+            {
+                animator.SetBool("isMoving", true);
+            }
+            if (thisType == CharacterType.Child)
+            {
+                animator.SetBool("isMoving", true);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (thisType == CharacterType.Mother)
+            {
+                animator.SetTrigger("clean");
+            }
+            if (thisType == CharacterType.Child)
+            {
+                animator.SetTrigger("game");
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (thisType == CharacterType.Mother)
+            {
+                animator.SetTrigger("phone");
+            }
+            if (thisType == CharacterType.Child)
+            {
+                animator.SetTrigger("cry");
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            if (thisType == CharacterType.Child)
+            {
+                animator.SetTrigger("read");
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            isBeingControlled = !isBeingControlled;
+        }
+        ReadInputMovement();
         PlayerMovement();
-        CameraRotation();
+        AlignCharacterCameraAndVisual();
         if (thisType == CharacterType.Mother)
         {
             TickMotherInteraction();
@@ -77,31 +127,48 @@ public class PlayerController : MonoBehaviour
         }
 
         interactTimer = 0f;
-        interactProgressBar.gameObject.SetActive(false);
-
+        if (interactProgressBar != null)
+        {
+            interactProgressBar.gameObject.SetActive(false);
+        }
     }
 
     private void PlayerMovement()
     {
-        Vector3 move = new Vector3(movement.x, 0, movement.y);
-        cc.Move(transform.TransformDirection(move) * Time.deltaTime * speed);
+        if (isBeingControlled)
+        {
+            Vector3 move = new Vector3(movement.x, 0, movement.z);
+            cc.Move(move * Time.deltaTime * speed);
+            if (move.magnitude != 0)
+            {
+                animator.SetBool("isMoving", true);
+            }
+            else
+            {
+                animator.SetBool("isMoving", false);
+            }
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
     }
 
-    private void CameraRotation()
+    private void AlignCharacterCameraAndVisual()
     {
-        rotationX -= (lookDirection.y * Time.deltaTime) * sensitivityY;
-        rotationX = Mathf.Clamp(rotationX, minimumY, maximumY);
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-        transform.Rotate(Vector3.up * (lookDirection.x * Time.deltaTime) * sensitivityX);
+        if (isBeingControlled)
+        {
+            lookRotationX += -Input.GetAxis("Mouse Y") * lookSpeed * Time.deltaTime;
+            lookRotationX = Mathf.Clamp(lookRotationX, -lookXLimit, lookXLimit);
+            lookRotationY += Input.GetAxis("Mouse X") * lookSpeed * Time.deltaTime;
+            playerCamera.transform.position = cameraPosition.position;
+            playerCamera.transform.localRotation = Quaternion.Euler(lookRotationX, lookRotationY, 0);
+            transform.localRotation = Quaternion.Euler(0, lookRotationY, 0);
+        }
     }
 
-    public void OnMovement(InputAction.CallbackContext context)
+    private void ReadInputMovement()
     {
-        movement = context.ReadValue<Vector2>();
-    }
-
-    public void OnLook(InputAction.CallbackContext context) 
-    {
-        lookDirection = context.ReadValue<Vector2>();
+        movement = Input.GetAxisRaw("Horizontal") * transform.right + Input.GetAxisRaw("Vertical") * transform.forward;
     }
 }
